@@ -12,7 +12,7 @@ public class server {
     public server(){
         try{
             CalculatorRemoteImpl obj = new CalculatorRemoteImpl();
-            Registry reg = LocateRegistry.createRegistry(1099);
+            Registry reg = LocateRegistry.createRegistry(1199);
             reg.rebind("CalculatorService",obj);
         } catch (RemoteException e) {
             throw new RuntimeException(e);

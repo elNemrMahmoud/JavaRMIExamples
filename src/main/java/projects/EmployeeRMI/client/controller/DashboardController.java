@@ -8,13 +8,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 import projects.EmployeeRMI.client.model.Employee;
 import projects.EmployeeRMI.client.services.EmployeeService;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
@@ -36,10 +33,6 @@ public class DashboardController implements Initializable {
     private ObservableList<Employee> employeeList = FXCollections.observableArrayList();
     private EmployeeService employeeService = new EmployeeService();
 
-    public void initialize() {
-
-
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

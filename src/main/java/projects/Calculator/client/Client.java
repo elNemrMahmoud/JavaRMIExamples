@@ -37,7 +37,7 @@ public class Client {
     public static CalculatorRemoteInterface getConnectionInterface() {
         CalculatorRemoteInterface calculator = null;
         try {
-            Registry reg = LocateRegistry.getRegistry();
+            Registry reg = LocateRegistry.getRegistry(1199);
             calculator =
                     (CalculatorRemoteInterface) reg.lookup("CalculatorService");
         } catch (RemoteException e) {
